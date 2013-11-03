@@ -1,7 +1,11 @@
 function autoResume() {
-    var link = $('#lightbox-footer-right a');
-    if (link.length && link.text() === "Resume playback") {
-        link.click();
+    var link = $('#lightbox-footer-right a'),
+        text;
+    if (link.length > 0) {
+        text = link.text();
+        if (text === "Resume playback" || text === "Yes, I'm Here!") {
+            link.click();
+        }
     }
     setTimeout(autoResume, 1000);
 }
