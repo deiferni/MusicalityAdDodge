@@ -1,5 +1,5 @@
 function autoResume() {
-    var link = $('#lightbox-footer-right a'),
+    var link = $('#lightbox-footer-left a'),
         text;
     if (link.length > 0) {
         text = link.text();
