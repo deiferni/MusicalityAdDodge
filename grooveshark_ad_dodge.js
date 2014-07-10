@@ -2,8 +2,8 @@ function autoResume() {
     var link = $('#lightbox-footer-left a'),
         text;
     if (link.length > 0) {
-        text = link.text();
-        if (text === "Resume playback" || text === "Yes, I'm Here!") {
+        text = link.text().toLowerCase();
+        if (text === "resume playback" || text === "yes, i'm here!") {
             link.click();
         }
     }
